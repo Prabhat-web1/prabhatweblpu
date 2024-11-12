@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Travel Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .country {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px black;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            transition: 0.3s ease;
+        }
+        .country:hover {
+            transform:matrix3d(-5px);
+        }
+        .country-header {
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            align-items: flex-end;
+            padding: 1rem;
+        }
+        .country-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+            
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .country-content {
+            padding: 1rem;
+        }
+        .attraction {
+            margin-bottom: 23px;
+        }
+        .attraction-button {
+            display: block;
+            width: 100%;
+            padding: rem;
+            background-color: #f8f8f8;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            
+            text-align: left;
+            cursor: pointer;
+            transition:background-color 0.3s ease;
+        }
+        .attraction-button:hover {
+            background-color: blue;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>World Travel Guide</h1>
+    </header>
+    <div class="container">
+        <div class="country">
+            <div class="country-header" style="background-image: url(../india.webp);">
+                <h2 class="country-name" style="color:coral">India</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="taj-mahal.html" class="attraction-button">Taj Mahal, Agra</a>
+                </div>
+                <div class="attraction">
+                    <a href="amber-fort.html" class="attraction-button">Jaipur's Amber Fort, Rajasthan</a>
+                </div>
+                <div class="attraction">
+                    <a href="golden.html" class="attraction-button">Golden Temple,Amritsar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image:url(https://logodix.com/logo/1058494.jpg);">
+                <h2 class="country-name" style="color: brown;">Japan</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="mount-fuji.html" class="attraction-button">Mount Fuji</a>
+                </div>
+                <div class="attraction">
+                    <a href="fushimi-inari.html" class="attraction-button">Fushimi Inari Shrine, Kyoto</a>
+                </div>
+                <div class="attraction">
+                    <a href="tokyo-disneyland.html" class="attraction-button">Tokyo Disneyland</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://i.pinimg.com/originals/3e/cf/40/3ecf4059917f60999553c155d2270958.jpg');">
+                <h2 class="country-name" style="color:limegreen;">Australia</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="great-ocean-road.html" class="attraction-button">Great Ocean Road</a>
+                </div>
+                <div class="attraction">
+                    <a href="bondi-beach.html" class="attraction-button">Bondi Beach, Sydney</a>
+                </div>
+                <div class="attraction">
+                    <a href="kakadu-national-park.html" class="attraction-button">Kakadu National Park</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url(/american.jpg);">
+                <h2 class="country-name">United States</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="yosemite.html" class="attraction-button">Yosemite National Park</a>
+                </div>
+                <div class="attraction">
+                    <a href="new-orleans.html" class="attraction-button">New Orleans French Quarter</a>
+                </div>
+                <div class="attraction">
+                    <a href="mount-rushmore.html" class="attraction-button">Mount Rushmore</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://cdn1.vectorstock.com/i/1000x1000/42/10/spanish-culture-icons-isolated-icon-design-vector-10464210.jpg');">
+                <h2 class="country-name">Spain</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="park-guell.html" class="attraction-button">Park Güell, Barcelona</a>
+                </div>
+                <div class="attraction">
+                    <a href="seville-cathedral.html" class="attraction-button">Seville Cathedral</a>
+                </div>
+                <div class="attraction">
+                    <a href="santiago-de-compostela.html" class="attraction-button">Santiago de Compostela</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://image.shutterstock.com/z/stock-vector-thailand-culture-logo-vector-design-1808048452.jpg');">
+                <h2 class="country-name">Thailand</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="bangkok-floating-markets.html" class="attraction-button">Bangkok Floating Markets</a>
+                </div>
+                <div class="attraction">
+                    <a href="chiang-mai-temples.html" class="attraction-button">Chiang Mai Temples</a>
+                </div>
+                <div class="attraction">
+                    <a href="koh-samui.html" class="attraction-button">Koh Samui</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://thumbs.dreamstime.com/z/doodle-showing-architecture-culture-egypt-vector-illustration-72407533.jpg');">
+                <h2 class="country-name" style="color:darkgoldenrod">Egypt</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="karnak-temple.html" class="attraction-button">Karnak Temple</a>
+                </div>
+                <div class="attraction">
+                    <a href="abu-simbel.html" class="attraction-button">Abu Simbel</a>
+                </div>
+                <div class="attraction">
+                    <a href="siwa-oasis.html" class="attraction-button">Siwa Oasis</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://i.pinimg.com/originals/89/15/e1/8915e10c3e897fefad4fd91f8a602d23.jpg');">
+                <h2 class="country-name">Brazil</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="pantanal.html" class="attraction-button">Pantanal</a>
+                </div>
+                <div class="attraction">
+                    <a href="salvador-pelourinho.html" class="attraction-button">Salvador's Pelourinho</a>
+                </div>
+                <div class="attraction">
+                    <a href="buzios.html" class="attraction-button">Buzios</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://e7.pngegg.com/pngimages/1005/371/png-clipart-south-africa-african-cuisine-african-art-african-dance-party-africa-culture-computer-wallpaper.png');">
+                <h2 class="country-name">South Africa</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="cape-of-good-hope.html" class="attraction-button">Cape of Good Hope</a>
+                </div>
+                <div class="attraction">
+                    <a href="durban-golden-mile.html" class="attraction-button">Durban's Golden Mile</a>
+                </div>
+                <div class="attraction">
+                    <a href="hermanus.html" class="attraction-button">Hermanus</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://realgreekexperiences.com/wp-content/uploads/2021/02/Interesting-facts-about-the-Greek-flag.jpg');">
+                <h2 class="country-name">Greece</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="mykonos.html" class="attraction-button">Mykonos</a>
+                </div>
+                <div class="attraction">
+                    <a href="crete.html" class="attraction-button">Crete</a>
+                </div>
+                <div class="attraction">
+                    <a href="thessaloniki.html" class="attraction-button">Thessaloniki</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://www.travelalerts.ca/wp-content/uploads/2021/03/shutterstock_1823627702.jpg');">
+                <h2 class="country-name">Canada</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="banff-national-park.html" class="attraction-button">Banff National Park</a>
+                </div>
+                <div class="attraction">
+                    <a href="niagara-falls.html" class="attraction-button">Niagara Falls</a>
+                </div>
+                <div class="attraction">
+                    <a href="old-quebec-city.html" class="attraction-button">Old Quebec City</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="country">
+            <div class="country-header" style="background-image: url('https://www.pngall.com/wp-content/uploads/5/Italy-PNG-Download-Image.png');">
+                <h2 class="country-name">Italy</h2>
+            </div>
+            <div class="country-content">
+                <div class="attraction">
+                    <a href="colosseum.html" class="attraction-button">Colosseum, Rome</a>
+                </div>
+                <div class="attraction">
+                    <a href="venice-canals.html" class="attraction-button">Venice Canals</a>
+                </div>
+                <div class="attraction">
+                    <a href="leaning-tower.html" class="attraction-button">Leaning Tower of Pisa</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="registration-section">
+        <div class="container">
+            <h2 class="section-title">Register Now</h2>
+            <form id="registrationForm" class="registration-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" required placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <select id="destination" name="destination" required>
+                        <option value="">Select Destination</option>
+                        <option value="taj-mahal">Taj Mahal, India</option>
+                        <option value="mount-fuji">Mount Fuji, Japan</option>
+                        <option value="colosseum">Colosseum, Italy</option>
+                        <option value="Texas">Texas,United states</option>
+                        <!-- Add more options as needed --></option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="people" name="people" required min="1" placeholder="Number of People">
+                </div>
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Add Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="why-us">
+                <h2>Why Choose Us?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon" style="background-color: #4A90E2;">
+                            <img src="https://public.blob.vercel-storage.com/shield-check-RWJ9mghvIKOWd5Gwb5AI1Y0qxbW6In.svg" alt="Trust">
+                        </div>
+                        <h3>Your Trusted Advisor</h3>
+                        <p>We'll answer your every question. Our experienced travel experts give us this advantage.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" style="background-color: #F5A623;">
+                            <img src="https://public.blob.vercel-storage.com/headset-RWJ9mghvIKOWd5Gwb5AI1Y0qxbW6In.svg" alt="Listen">
+                        </div>
+                        <h3>We Love Listening</h3>
+                        <p>Your holiday, your terms. We'll fill in the blanks to plan the perfect trip.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" style="background-color: #50E3C2;">
+                            <img src="https://public.blob.vercel-storage.com/star-user-RWJ9mghvIKOWd5Gwb5AI1Y0qxbW6In.svg" alt="Experience">
+                        </div>
+                        <h3>Memorable Experiences</h3>
+                        <p>Do everything or do nothing. Either way, your holiday will be nothing less than extraordinary.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" style="background-color: #9013FE;">
+                            <img src="https://public.blob.vercel-storage.com/handshake-RWJ9mghvIKOWd5Gwb5AI1Y0qxbW6In.svg" alt="Easy">
+                        </div>
+                        <h3>Easy as ABC</h3>
+                        <p>Travel smooth and stress-free. That's how easy we make it.</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon" style="background-color: #E85B81;">
+                            <img src="https://public.blob.vercel-storage.com/map-RWJ9mghvIKOWd5Gwb5AI1Y0qxbW6In.svg" alt="Custom">
+                        </div>
+                        <h3>Handcrafted Holidays</h3>
+                        <p>We interact with our loyal customers to co-create unique experiences.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-contact">
+                <div class="contact-number">
+                    <a href="tel:18002099100">📞 1800-2099-100</a>
+                    <span>(Toll Free No.)</span>
+                </div>
+                <div class="newsletter">
+                    <input type="email" placeholder="Subscribe to our updates/offers">
+                    <button>Submit</button>
+                </div>
+            </div>
+
+            <nav class="footer-nav">
+                <div class="nav-group">
+                    <h4>ABOUT US</h4>
+                </div>
+                <div class="nav-group">
+                    <h4>INTERNATIONAL HOLIDAYS</h4>
+                </div>
+                <div class="nav-group">
+                    <h4>INDIA HOLIDAYS</h4>
+                </div>
+                <div class="nav-group">
+                    <h4>FOREIGN EXCHANGE</h4>
+                </div>
+                <div class="nav-group">
+                    <h4>TRAVEL BLOGS</h4>
+                </div>
+            </nav>
+
+            <div class="social-links">
+                <h4>FOLLOW US</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">Facebook</a>
+                    <a href="#" class="social-icon">YouTube</a>
+                    <a href="#" class="social-icon">Pinterest</a>
+                    <a href="#" class="social-icon">Instagram</a>
+                    <a href="#" class="social-icon">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        /* Add these styles to your existing CSS */
+        
+        .registration-section {
+            background-color: #f8f8f8;
+            padding: 4rem 0;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            color: #4A90E2;
+            margin-bottom: 2rem;
+        }
+
+        .registration-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #4A90E2;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #357ABD;
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .why-us {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .why-us h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #4A90E2;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .feature {
+            text-align: center;
+        }
+
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-icon img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .feature h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+
+        .footer-contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .contact-number {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-number a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .newsletter {
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .newsletter input {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            min-width: 250px;
+        }
+
+        .newsletter button {
+            padding: 0.5rem 1rem;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .nav-group h4 {
+            color: #4A90E2;
+            margin-bottom: 1rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .social-links {
+            text-align: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-icon {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                destination: document.getElementById('destination').value,
+                people: document.getElementById('people').value
+            };
+
+            
+            console.log('Registration submitted:', formData);
+            alert('Thank you for registering! We will contact you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
